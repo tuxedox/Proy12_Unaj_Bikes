@@ -5,7 +5,7 @@
 > **Machine Learning · Maestría en Ciencia de Datos e Inteligencia Artificial · EPG UNAJ**
 > Docente: Dr. Alain Paul Herrera Urtiaga
 
-**Equipo:** [Integrante 1] · [Integrante 2] · [Integrante 3]
+**Equipo:** [Jhonson R. Machaca Mamani] · [Antonio Alexei Colca Rojas]
 
 🔗 **Demo:** [enlace a la app publicada en Streamlit Community Cloud] · 📄 **Informes:** [Producto 1](informe/Producto1_ejemplo.md) · [Producto 2](informe/Producto2_ejemplo.md)
 
