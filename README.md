@@ -75,7 +75,7 @@ Solo usamos variables que existen **al terminar el 1.er semestre**. Las del 2.º
 
 ## 6. Uso de IA generativa
 
-[Ejemplo: "Usamos un asistente de IA para depurar errores de código y revisar la redacción. Todo el código fue revisado y puede ser explicado por el equipo."]
+[Usamos un asistente de IA para depurar errores de código y revisar la redacción. Todo el código fue revisado y puede ser explicado por el equipo.]
 
 ---
 
