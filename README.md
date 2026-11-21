@@ -1,6 +1,7 @@
-# Alerta temprana de deserción estudiantil
+# Alquileres de bicicletas (rentals)
 
-> **Proyecto :** Este repositorio muestra cómo debe quedar el repositorio de su proyecto al entregar los productos 1 y 2. Úsenlo como **referencia**: copien la estructura y el estilo, no el contenido.
+> **Proyecto :** Regresión Lineal Múltiple para predecir la cantidad de alquileres de bicicletas (rentals)**referencia**
+> 
 >
 > **Maestría en Ciencia de Datos e Inteligencia Artificial · EPG UNAJ**
 > **Curso :** Machine Learning · 
@@ -14,43 +15,34 @@
 
 ## 1. El problema
 
-Uno de cada tres estudiantes universitarios abandona su carrera. Si la universidad pudiera identificarlos **al terminar el primer semestre**, podría ofrecerles tutoría a tiempo.
+El problema consiste en predecir la cantidad de bicicletas alquiladas diariamente a partir de diferentes características climáticas y temporales.
 
-**Pregunta:** al terminar el primer semestre, ¿qué estudiantes abandonarán la carrera?
+Se busca determinar si variables como la temperatura, humedad, velocidad del viento, estación del año y día de la semana permiten estimar adecuadamente la demanda de alquiler de bicicletas.
+
+**Pregunta:** ¿En qué medida las condiciones climáticas y las características temporales permiten predecir la cantidad de bicicletas alquiladas diariamente mediante modelos de Regresión Lineal Múltiple?
 
 - **Tipo de problema:** Regresion Lineal Multiple
-- **Métrica principal:** **recall**, porque no detectar a un estudiante que abandonará cuesta más que ofrecer una tutoría innecesaria. Reportamos también el **ROC-AUC**.
+- **Métrica principal:** La métrica utilizada en el notebook es el **Error Porcentual Absoluto Medio (MAPE)**.
 
 ## 2. Los datos
 
 | Campo | Detalle |
 |---|---|
-| Fuente | [Predict Students' Dropout and Academic Success](https://archive.ics.uci.edu/dataset/697/predict+students+dropout+and+academic+success) (UCI Machine Learning Repository) |
-| Tamaño | 4 424 estudiantes |
-| Variables usadas | 12: datos de ingreso, situación económica y resultados del 1.er semestre |
-| Variable objetivo | `abandona` (1 = abandonó la carrera): **32 %** de los casos |
+| Fuente |[Bike Sharing Dataset](https://github.com/robintux/Datasets4StackOverFlowQuestions/blob/master/bikes.csv) |
+| Característica    |	Descripción |
+| Total de registros	| 731 |
+| Total de columnas	| 10 |
+| Variables numéricas enteras	| 6 |
+| Variables numéricas decimales	| 4 |
+| Valores nulos	| 0 |
+| Variable objetivo	| rentals |
 
-Solo usamos variables que existen **al terminar el 1.er semestre**. Las del 2.º semestre se excluyeron para evitar fuga de datos.
 
 ## 3. Resultados principales
 
-| Modelo | Recall (CV) | ROC-AUC (CV) |
-|---|---|---|
-| Baseline (clase mayoritaria) | 0,000 | 0,500 |
-| k-NN (k = 15) | 0,591 ± 0,032 | 0,867 ± 0,008 |
-| Random Forest | 0,739 ± 0,017 | 0,887 ± 0,012 |
-| LightGBM | 0,748 ± 0,029 | 0,886 ± 0,011 |
-| **Regresión logística (L2) · modelo final** | **0,784 ± 0,021** | **0,895 ± 0,010** |
-| LightGBM optimizado con Optuna | — | 0,894 ± 0,012 |
-| Red neuronal (MLP) | — | 0,885 ± 0,010 |
-
-**En el test**, el modelo final detecta **79 de cada 100** estudiantes que abandonarán (recall = 0,785; ROC-AUC = 0,905).
 
 **Hallazgos clave:**
-- La señal más fuerte son los **cursos aprobados en el 1.er semestre**: quienes no aprueban ninguno abandonan en un **79 %**.
-- LightGBM optimizado **empata** con la regresión logística (p = 0,58), así que elegimos la logística por ser más simple.
-- k-means encontró, sin conocer la respuesta, un perfil de **764 estudiantes con 80 % de abandono**.
-- ⚠️ El modelo detecta menos abandonos en **mujeres (73 %)** que en **hombres (84 %)**: es una limitación a corregir.
+- 
 
 ## 4. Estructura del repositorio
 
