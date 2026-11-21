@@ -1,11 +1,12 @@
-# 🎓 Alerta temprana de deserción estudiantil
+# Alerta temprana de deserción estudiantil
 
-> **📌 Proyecto de ejemplo.** Este repositorio muestra cómo debe quedar el repositorio de su proyecto al entregar los productos 1 y 2. Úsenlo como **referencia**: copien la estructura y el estilo, no el contenido.
+> **Proyecto :** Este repositorio muestra cómo debe quedar el repositorio de su proyecto al entregar los productos 1 y 2. Úsenlo como **referencia**: copien la estructura y el estilo, no el contenido.
 >
-> **Machine Learning · Maestría en Ciencia de Datos e Inteligencia Artificial · EPG UNAJ**
-> Docente: Dr. Alain Paul Herrera Urtiaga
+> **Maestría en Ciencia de Datos e Inteligencia Artificial · EPG UNAJ**
+> **Curso :** Machine Learning · 
+> **Docente:** Dr. Alain Paul Herrera Urtiaga
 
-**Equipo:** [Jhonson R. Machaca Mamani] · [Antonio Alexei Colca Rojas]
+**Equipo:** Jhonson R. Machaca Mamani · Antonio Alexei Colca Rojas
 
 🔗 **Demo:** [enlace a la app publicada en Streamlit Community Cloud] · 📄 **Informes:** [Producto 1](informe/Producto1_ejemplo.md) · [Producto 2](informe/Producto2_ejemplo.md)
 
@@ -17,7 +18,7 @@ Uno de cada tres estudiantes universitarios abandona su carrera. Si la universid
 
 **Pregunta:** al terminar el primer semestre, ¿qué estudiantes abandonarán la carrera?
 
-- **Tipo de problema:** clasificación binaria (abandona / no abandona)
+- **Tipo de problema:** Regresion Lineal Multiple
 - **Métrica principal:** **recall**, porque no detectar a un estudiante que abandonará cuesta más que ofrecer una tutoría innecesaria. Reportamos también el **ROC-AUC**.
 
 ## 2. Los datos
@@ -77,7 +78,12 @@ Solo usamos variables que existen **al terminar el 1.er semestre**. Las del 2.º
 
 [Usamos un asistente de IA para depurar errores de código y revisar la redacción. Todo el código fue revisado y puede ser explicado por el equipo.]
 
+## 7. Referencias
+
+1. Libro Microsoft - Bishop https://www.microsoft.com/en-us/research/wp-content/uploads/2006/01/Bishop-Pattern-Recognition-and-Machine-Learning-2006.pdf
+
+
 ---
 
 📘 **Guías del curso:** [Producto 1](docs/Producto1_guia.md) · [Producto 2](docs/Producto2_guia.md) · [GitHub con Colab](docs/Guia_GitHub_Colab.md)
-"# Proy12_Unaj_Bikes" 
+
